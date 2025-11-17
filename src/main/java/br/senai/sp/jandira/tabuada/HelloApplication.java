@@ -30,6 +30,7 @@ public class HelloApplication extends Application {
         // Controlando o fechamento ao clicar no fechar da janela
         stage.setOnCloseRequest(event -> {
             fechar();
+            event.consume();
         });
 
         //Bloquear o redimensionamento da janela
